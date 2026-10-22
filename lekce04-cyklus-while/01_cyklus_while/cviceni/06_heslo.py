@@ -6,3 +6,16 @@
 #    Z cyklu se v obou případech dostaneš příkazem break.
 
 
+
+kolikrat = 0
+while True:
+    heslo = input("Zadej heslo: ")
+    kolikrat = kolikrat + 1
+    if heslo == "pyladies":
+        kolikrat = kolikrat + 1
+        print("Vítej!")
+        break
+    if kolikrat ==3:
+        print("Zablokováno!")
+        break
+    print("Špatně, zkus to znovu.")

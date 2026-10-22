@@ -16,7 +16,7 @@ while heslo != "pyladies":
     print("Špatně, zkus to znovu.")
     heslo = input("Zadej heslo: ")
 print("Vítej!")
-
+    
 
 # Na heslo se ptáme dvakrát – jednou před cyklem, jednou uvnitř. Není to
 # překlep. 

@@ -3,4 +3,7 @@
 
 # Vypiš všechna písmena slova "Python", každé na svůj řádek.
 
+slovo = "Python"
+for pismeno in slovo:
+    print(pismeno)
 

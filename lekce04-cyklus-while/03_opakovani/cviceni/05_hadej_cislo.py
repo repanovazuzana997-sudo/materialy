@@ -9,3 +9,23 @@
 #    Nahoru na první řádek nezapomeň:  from random import randrange
 
 
+from random import randrange
+hadanecislo = randrange(1,21)
+pocet = 0
+while True:
+    odpoved = int(input("Zadej číslo od 1-20:"))
+    pocet = pocet + 1
+
+    if odpoved == hadanecislo:
+        print("Trefa!")
+        break
+
+    if pocet == 5:
+        print("Končíš, pokusů bylo 5.")
+        break
+
+    if odpoved > hadanecislo:
+        print("Moc velké!")
+
+    else:
+        print("Moc malé!")

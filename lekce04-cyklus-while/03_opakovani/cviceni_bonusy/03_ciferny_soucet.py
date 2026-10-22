@@ -7,4 +7,11 @@
 #     Zkus i záporné číslo. Aby to fungovalo, hodí se abs(cislo) –
 #     ta funkce zahodí minus.
 
+cislo = int(input("Zadej celé trojmístné číslo:"))
+cislo = abs(cislo)
+soucet = 0
 
+while cislo > 0:
+    soucet = soucet + cislo % 10
+    cislo = cislo // 10
+print("Součet čísel je", soucet)

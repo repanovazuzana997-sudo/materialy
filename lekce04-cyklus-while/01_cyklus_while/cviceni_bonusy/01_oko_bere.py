@@ -11,4 +11,9 @@
 #     - Když řekneš, že už nechceš, hra skončí a vypíše se výsledek.
 #     Nahoru na první řádek nezapomeň:  from random import randrange
 
-
+from random import randrange
+oko = 0
+karty = randrange(2,10)
+while oko != 21:
+    oko = oko + karty
+    print(oko)

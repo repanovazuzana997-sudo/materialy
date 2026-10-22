@@ -6,3 +6,19 @@
 #    na jedno desetinné místo. (Nápověda: round(cislo, 1))
 
 
+soucet = 0
+kolik = 0
+cislo = int(input("Zadej číslo. Když zadáš 0, tak je konec."))
+
+while cislo != 0:
+    soucet = soucet + cislo
+    kolik = kolik +1
+    cislo = int(input("Zadej číslo znovu."))
+
+if cislo == 0:
+    print("Toto je konec.")
+    print("Součet je:", soucet)
+    print("Počet je:", kolik)
+    print("Průměr je:", round(soucet/kolik, 1))
+
+
