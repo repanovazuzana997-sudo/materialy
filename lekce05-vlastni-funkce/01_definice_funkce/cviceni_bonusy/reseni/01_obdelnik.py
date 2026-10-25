@@ -7,7 +7,7 @@
 
 def obdelnik(sirka, vyska):
     for radek in range(vyska):
-        print("*" * sirka)
+        print("*")
 
 
 obdelnik(5, 3)

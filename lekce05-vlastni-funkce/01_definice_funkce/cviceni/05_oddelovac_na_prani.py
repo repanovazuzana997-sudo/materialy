@@ -9,4 +9,10 @@
 #        oddelovac("=")
 #        oddelovac("-", 10)
 
+def oddelovac(znak ="*", delka = 30):
+    print(znak * delka)
 
+
+oddelovac()
+oddelovac("=")
+oddelovac("-", 10)

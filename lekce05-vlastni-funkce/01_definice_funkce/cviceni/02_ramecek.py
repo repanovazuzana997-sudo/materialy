@@ -8,3 +8,15 @@
 # definici sem nahoru, soubory se navzájem nevidí.
 
 
+
+def oddelovac():
+    print("*" * 30)
+
+def pozdrav(text):
+    oddelovac()
+    print(text)
+    oddelovac()
+
+
+pozdrav("Ahoj")
+pozdrav("Čau")
