@@ -7,3 +7,15 @@
 #     zkopíruj si její definici sem nahoru, soubory se navzájem nevidí.
 
 
+def je_heslo_dost_dlouhe(heslo):
+    return len(heslo) >= 8
+
+def zeptej_se_na_heslo():
+    heslo = input("Zvol si heslo:")
+    while not je_heslo_dost_dlouhe(heslo):
+        print("Je moc krátké")
+        heslo = input("Zvol si heslo:")
+    return heslo
+
+nove_heslo = zeptej_se_na_heslo()
+print("Heslo nastaveno:", nove_heslo)

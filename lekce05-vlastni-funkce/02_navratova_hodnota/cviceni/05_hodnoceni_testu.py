@@ -5,4 +5,14 @@
 #    a "neprošla" pro méně. Pak se v cyklu while ptej na body tak dlouho,
 #    dokud uživatel nezadá -1, a u každého zadání vypiš hodnocení.
 
+def hodnoceni(body):
+    if body >= 50:
+        return "Prošla."
+    else:
+        return "Neprošla."
+
+body = int(input("Kolik máš bodů? (-1 je konec): "))
+while body != -1:
+    print(body, "bodů.", hodnoceni(body))
+    body = int(input("Kolik máš bodů? (-1 je konec)"))
 

@@ -44,9 +44,18 @@
 # print("z vypis_dph:", vysledek_vypisu)
 # print("ze spocitej_dph:", vysledek_vypoctu)
 
-def pozdrav_a_vrat(jmeno):
-    print("Zdravím,", jmeno)
-    return "hotovo"
-    print("Tenhle řádek se nikdy nevypíše.")
+# def pozdrav_a_vrat(jmeno):
+#     print("Zdravím,", jmeno)
+#     return "hotovo"
+#     print("Tenhle řádek se nikdy nevypíše.")
 
-print(pozdrav_a_vrat("Anno"))
+# print(pozdrav_a_vrat("Anno"))
+
+def je_heslo_dost_dlouhe(heslo):
+    if len(heslo) >= 8:
+        return True
+    else:
+        return False
+
+def je_heslo_dost_dlouhe(heslo):
+    return len(heslo) >= 8

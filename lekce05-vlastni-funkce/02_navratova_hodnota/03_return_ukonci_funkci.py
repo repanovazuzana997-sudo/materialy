@@ -53,5 +53,5 @@ for znamka in range(1, 6):
 # Tuhle funkci jsi psala i v minulé složce, tam ale hodnocení rovnou
 # vypisovala. Teď ho vrací, takže si volající může vybrat, co s ním –
 # vypsat ho, uložit, nebo poslat do další funkce.
-hodnoceni = ohodnot_znamku(1)
+hodnoceni = ohodnot_znamku(3)
 print("Na vysvědčení bude:", hodnoceni)
