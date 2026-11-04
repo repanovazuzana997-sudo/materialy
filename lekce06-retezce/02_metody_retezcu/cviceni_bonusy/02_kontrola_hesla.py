@@ -13,3 +13,23 @@
 #    Na velké písmeno stačí porovnat heslo se sebou samým po lower().
 #    Jde to ale i cyklem jako u číslice – každého znaku se tam zeptáš
 #    metodou isupper().
+
+heslo = input("Zadej heslo:")
+
+dost_dlouhe = len(heslo) >= 8
+
+ma_velke = heslo != heslo.lower()
+
+for znak in heslo:
+    if znak.isdigit():
+        ma_cislici = True
+        break
+
+print(f"Aspoň osm znaků:  {dost_dlouhe}")
+print(f"Obsahuje číslici: {ma_cislici}")
+print(f"Velké písmeno:    {ma_velke}")
+
+if dost_dlouhe and ma_cislici and ma_velke:
+    print("Heslo je přijato.")
+else:
+    print("Heslo nevyhovuje.")

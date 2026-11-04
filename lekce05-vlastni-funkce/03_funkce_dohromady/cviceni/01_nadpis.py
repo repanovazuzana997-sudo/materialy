@@ -5,4 +5,9 @@
 #    z pomlček dlouhou přesně jako ten text.
 #    Vyzkoušej ji na dvou různě dlouhých nadpisech.
 
+def nadpis(text):
+	print(text)
+	print("-" * len(text))
 
+nadpis("ahoj")
+nadpis("nejkulaťoulinkatější")

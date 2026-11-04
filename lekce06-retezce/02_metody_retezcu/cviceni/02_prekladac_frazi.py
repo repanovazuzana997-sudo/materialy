@@ -11,3 +11,9 @@
 #    Výměny dělej po krocích, ať se řádky dají přečíst.
 
 veta = "Musíme proaktivně implementovat synergie napříč týmy."
+
+opravena = veta.replace("proaktivně", "včas")
+opravena = opravena.replace("implementovat", "zařídit")
+opravena = opravena.replace("synergie", "spolupráci")
+
+print(opravena)

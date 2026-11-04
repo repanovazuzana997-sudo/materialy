@@ -51,11 +51,14 @@
 
 # print(pozdrav_a_vrat("Anno"))
 
-def je_heslo_dost_dlouhe(heslo):
-    if len(heslo) >= 8:
-        return True
-    else:
-        return False
+# def je_heslo_dost_dlouhe(heslo):
+#     if len(heslo) >= 8:
+#         return True
+#     else:
+#         return False
 
-def je_heslo_dost_dlouhe(heslo):
-    return len(heslo) >= 8
+# def je_heslo_dost_dlouhe(heslo):
+#     return len(heslo) >= 8
+
+# lekce 05_03
+

@@ -4,3 +4,8 @@
 # Zeptej se na jméno souboru a vypiš, jestli je to obrázek,
 #    tedy jestli končí na .png
 
+soubor = input("Na co končí název souboru?")
+
+if soubor.endswith(".png"):
+    print("Tohle je PDF.")
+print("To není obrázek.")

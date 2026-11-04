@@ -6,3 +6,9 @@
 #    vyjde, tím líp. Třeba:
 #
 #    Dneska jsem viděla fialový rohlík, jak programuje.
+
+pods_jm = str(input("Napiš mi podstatné jméno:\n"))
+sloveso = str(input("Napiš mi sloveso:\n"))
+pridavne_jm = str(input("Napiš mi přídavné jméno:\n"))
+
+print(f"Včera jsem viděla jak {pridavne_jm} {pods_jm} {sloveso}.")

@@ -7,4 +7,14 @@
 #    se na je_sude zeptá.
 #    Pak v cyklu for vypiš popis čísel od 1 do 6.
 
+def je_sude(cislo):
+    return cislo % 2 == 0
 
+def popis(cislo):
+    if je_sude(cislo):
+        return str(cislo) + " je sudé"
+    else:
+        return str(cislo) + " je liché"
+
+for cislo in range(1,7):
+	print(popis(cislo))

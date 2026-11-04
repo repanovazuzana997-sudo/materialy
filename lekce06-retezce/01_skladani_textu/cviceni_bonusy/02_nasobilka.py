@@ -14,3 +14,8 @@
 #
 #    Vnořené cykly i print s end znáš z lekce 3. Nové je jen to,
 #    kolik místa každému číslu dáš.
+
+for radek in range(1,11):
+    for sloupec in range(1, 10):
+        print(f"{radek * sloupec:5}", end="")
+    print()

@@ -12,3 +12,14 @@
 jmeno1 = "  anna NOVÁKOVÁ  "
 jmeno2 = "PETRA svobodová"
 jmeno3 = " tereza Dvořáková   "
+
+
+def oprava(jmeno):
+    cele = jmeno.strip().title()
+    uklizene = cele.replace(" ",".").lower()
+    print(f"{cele} - {uklizene}")
+
+oprava(jmeno1)
+oprava(jmeno2)
+oprava(jmeno3)
+

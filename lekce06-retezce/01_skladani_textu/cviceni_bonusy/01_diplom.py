@@ -13,4 +13,18 @@
 #    šířku tedy spočítej, nepiš ji natvrdo.
 
 jmeno = "Anna Nováková"
-kurz = "Python pro začátečnice"
+kurz = "Python pro začátečnice a pro pokročilé"
+
+delka_jmena = len(str(jmeno))
+delka_kurzu = len(str(kurz))
+
+if delka_jmena > delka_kurzu:
+    delka = delka_jmena + 2
+else:
+    delka = delka_kurzu + 2
+    
+print(f"""{delka * "*"}
+*{jmeno}*
+*{kurz}*
+{delka * "*"}""")
+

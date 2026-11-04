@@ -8,3 +8,11 @@
 #    - kolikrát je v něm písmeno "a".
 #
 #    Délku umí len() z lekce 3, zbytek jsou metody z výkladu.
+
+slovo = input("Zadej slovo:")
+acek = slovo.count("a")
+
+print(f"Velkými: {slovo.upper()}")
+print(f"Malými: {slovo.lower()}")
+print(f"Délka slova: {len(slovo)}")
+print(f"Počet \"a\": {acek}")

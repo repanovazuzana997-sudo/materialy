@@ -7,3 +7,10 @@
 #
 #    V lekci 5 jsi PINu dávala tři pokusy na uhodnutí. Tady jde o to,
 #    jestli vůbec vypadá jako PIN.
+
+pin = input("Zadej pin:").strip()
+
+if pin.isdigit() and len(pin) == 4:
+    print("Správný tvar pinu.")
+else:
+    print("Špatný tvar pinu. Pin musí být 4 číslice.")
