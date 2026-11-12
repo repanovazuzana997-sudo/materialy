@@ -6,7 +6,7 @@
 prvni = input("První číslo: ")
 druhe = input("Druhé číslo: ")
 
-print(f"Součet: {prvni + druhe}")
+print(f"Součet: {prvni} + {druhe}")
 
 
 # Žádná chybová hláška se neobjevila. Program udělal přesně to, co

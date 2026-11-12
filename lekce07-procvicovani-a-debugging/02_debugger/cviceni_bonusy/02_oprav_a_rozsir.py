@@ -16,13 +16,17 @@ samohlasky = "aeiouy"
 
 pocet_samohlasek = 0
 pocet_souhlasek = 0
+mezera = 0
 
 for znak in veta.lower():
     if znak == " ":
+        mezera = mezera + 1
         continue
     if znak in samohlasky:
         pocet_samohlasek = pocet_samohlasek + 1
-    pocet_souhlasek = pocet_souhlasek + 1
+    pocet_souhlasek = len(veta)-pocet_samohlasek-mezera
+    podil_samohlasek = int(pocet_souhlasek) / int(pocet_samohlasek) * 100
 
 print(f"Samohlásek: {pocet_samohlasek}")
 print(f"Souhlásek: {pocet_souhlasek}")
+print(f"Podíl samohlásek: {podil_samohlasek}")

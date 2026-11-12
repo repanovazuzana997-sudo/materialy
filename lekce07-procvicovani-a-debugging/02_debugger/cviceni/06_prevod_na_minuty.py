@@ -5,7 +5,7 @@
 
 def na_minuty(cas):
     hodiny = int(cas[0])
-    minuty = int(cas[2:3])
+    minuty = int(cas[2:])
     return hodiny * 60 + minuty
 
 

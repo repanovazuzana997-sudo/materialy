@@ -14,12 +14,12 @@ heslo = input("Zadej heslo: ")
 dost_dlouhe = len(heslo) >= 8
 ma_velke = heslo != heslo.upper()
 
+
 ma_cislici = False
 for znak in heslo:
     if znak.isdigit():
         ma_cislici = True
-    else:
-        ma_cislici = False
+    break
 
 print(f"Aspoň osm znaků:  {dost_dlouhe}")
 print(f"Obsahuje číslici: {ma_cislici}")

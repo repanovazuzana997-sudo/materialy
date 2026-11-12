@@ -16,7 +16,7 @@ while zbyva >= 20:
 
 while zbyva >= 5:
     petikoruny = petikoruny + 1
-    zbyva = zbyva - 20
+    zbyva = zbyva - 5
 
 print(f"Dvacetikoruny: {dvacetikoruny}")
 print(f"Pětikoruny: {petikoruny}")

@@ -30,17 +30,21 @@ def napoveda(tip, hledane):
 
 
 pokusy = 0
+hledane_cislo = vylosuj_cislo()
 
 while True:
-    hledane_cislo = vylosuj_cislo()
     tip = zeptej_se_na_tip()
     pokusy = pokusy + 1
 
-    if pokusy == 5:
-        print(f"Došly ti pokusy. Hledané číslo bylo {hledane_cislo}.")
-        break
+   
     if je_trefa(tip, hledane_cislo):
         print("Trefa!")
         break
+    elif pokusy < 5:
+        print(napoveda(tip, hledane_cislo))
+    elif pokusy == 5:
+        print(f"Došly ti pokusy. Hledané číslo bylo {hledane_cislo}.")
+        break
+    
 
-    print(napoveda(tip, hledane_cislo))
+

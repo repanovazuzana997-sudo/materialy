@@ -10,4 +10,5 @@ soucet = 0
 
 for znak in pin:
     soucet = soucet + int(znak)
-    print(f"Součet číslic: {soucet}")
+
+print(f"Součet číslic: {soucet}")

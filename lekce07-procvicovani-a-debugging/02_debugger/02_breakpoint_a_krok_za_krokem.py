@@ -7,33 +7,37 @@
 #
 # Spusť ho a napiš kamen.
 
+
+KAMEN = "kamen"
+NUZKY = "nuzky"
+PAPIR = "papir"
 from random import randrange
 
 
 def uklid_vstupu(text):
-    return text.strip().title()
+    return text.strip().lower()
 
 
 def tah_pocitace():
-    cislo = randrange(1, 4)
+    cislo = randrange(1, 3)
     if cislo == 1:
-        return "kamen"
+        return KAMEN
     elif cislo == 2:
-        return "nuzky"
+        return NUZKY
     else:
-        return "papir"
+        return PAPIR
 
 
 def je_platny(tah):
-    return tah == "kamen" or tah == "nuzky" or tah == "papir"
+    return tah == KAMEN or tah == NUZKY or tah == PAPIR
 
 
 def kdo_vyhral(tvuj, pocitacuv):
     if tvuj == pocitacuv:
         return "remiza"
-    vyhrala_kamenem = tvuj == "kamen" and pocitacuv == "papir"
-    vyhrala_nuzkami = tvuj == "nuzky" and pocitacuv == "papir"
-    vyhrala_papirem = tvuj == "papir" and pocitacuv == "kamen"
+    vyhrala_kamenem = tvuj == KAMEN and pocitacuv == NUZKY
+    vyhrala_nuzkami = tvuj == NUZKY and pocitacuv == PAPIR
+    vyhrala_papirem = tvuj == PAPIR and pocitacuv == KAMEN
     if vyhrala_kamenem or vyhrala_nuzkami or vyhrala_papirem:
         return "vyhra"
     else:

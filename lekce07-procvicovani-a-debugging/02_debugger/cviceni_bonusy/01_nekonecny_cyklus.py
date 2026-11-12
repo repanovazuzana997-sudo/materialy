@@ -17,6 +17,7 @@ cislo = 100
 kroku = 0
 
 while cislo != 0:
+    cislo = cislo - 50
     kroku = kroku + 1
 
 print(f"Hotovo za {kroku} kroků.")
